@@ -60,22 +60,22 @@ def run(songs)
   puts "Please enter your command:"
   user_input = gets.chomp
 
-
 while user_input != "exit"
-
-if user_input == "list"
-  list(songs)
-  puts "Please enter your command:"
-  user_input = gets.chomp
+  if user_input == "list"
+    list(songs)
+    user_input = gets.chomp
 
 elsif user_input == "play"
   play(songs)
+  user_input = gets.chomp
 
 elsif user_input == "help"
   help
+  user_input = gets.chomp
 
 else
   puts "Invalid input, please try again"
+  user_input = gets.chomp
 
 end
 end
