@@ -29,17 +29,3 @@ def list(songs)
     puts "#{i+1}. #{track}"
   end
 end
-
-
-def play(songs)
-  songs.each do |s|
-  if s.includes? (songs)
-  "playing #{songs}!"
-else
-  "Invalid input, please try again"
-end
-
-puts "Please enter a song name or number:"
-song_name = gets.chomp
-
-puts play(song_name)
