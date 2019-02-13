@@ -65,7 +65,7 @@ def run(songs)
 while user_input != "exit"
 
 if user_input == "list"
-return list(songs)
+list(songs)
 puts "Please enter your command:"
 user_input = gets.chomp
 
