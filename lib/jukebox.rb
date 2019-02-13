@@ -1,4 +1,4 @@
-
+require "pry"
 
 songs = [
   "Phoenix - 1901",
@@ -79,3 +79,5 @@ def run(songs)
     end
 end
 end
+
+binding.pry
