@@ -56,31 +56,26 @@ end
 
 
 def run(songs)
-  puts "Please enter your command:"
-  user_input = gets.chomp
   help
+  user_input=""
+  
+    while user_input != "exit"
+      puts "Please enter your command:"
+      user_input = gets.chomp
 
-while user_input != "exit"
-  if user_input == "list"
-    list(songs)
-    puts "Please enter your command:"
-    user_input = gets.chomp
+      if user_input == "help"
+        help
 
-elsif user_input == "play"
-  play(songs)
-  puts "Please enter your command:"
-  user_input = gets.chomp
+    elsif user_input == "list"
+        list(songs)
 
-elsif user_input == "help"
-  help
-  puts "Please enter your command:"
-  user_input = gets.chomp
+    elsif user_input == "play"
+      play(songs)
 
-else
-  puts "Invalid input, please try again"
-  user_input = gets.chomp
-
+    elsif user_input == "exit"
+      exit_jukebox
+    else
+      Puts "Invalid input, please try again"
+    end
 end
-end
-exit_jukebox
 end
