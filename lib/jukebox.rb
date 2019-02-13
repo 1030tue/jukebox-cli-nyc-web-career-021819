@@ -56,7 +56,7 @@ end
 
 
 
-def run
+def run(songs)
   help
 end
   binding.pry
