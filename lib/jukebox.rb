@@ -58,9 +58,9 @@ end
 def run(songs)
   help
   user_input=""
-  
+
     while user_input != "exit"
-      puts "Please enter your command:"
+      puts "Please enter a command:"
       user_input = gets.chomp
 
       if user_input == "help"
