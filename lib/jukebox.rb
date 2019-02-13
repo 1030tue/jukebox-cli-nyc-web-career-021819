@@ -1,3 +1,4 @@
+require "pry"
 
 songs = [
   "Phoenix - 1901",
@@ -23,6 +24,7 @@ def help
 - exit : exits this program"
 end
 
+binding.pry
 
 def list(songs)
   songs.each_with_index do |track,i|
