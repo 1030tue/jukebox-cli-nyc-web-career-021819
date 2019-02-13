@@ -56,6 +56,22 @@ end
 
 def run
   return help
-
   puts "Please enter your command:"
   user_input = gets.chomp
+
+while user_input != "exit"
+if user_input == "list"
+return list(songs)
+
+elsif user_input = "play"
+return play(songs)
+
+elsif user_input = "help"
+return help
+
+elsif user_input = "exit"
+return exit_jukebox
+
+end
+end
+end
