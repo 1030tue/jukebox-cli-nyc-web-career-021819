@@ -24,7 +24,6 @@ def help
 - exit : exits this program"
 end
 
-binding.pry
 
 def list(songs)
   songs.each_with_index do |track,i|
@@ -54,6 +53,8 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+binding.pry
 
 
 def run
