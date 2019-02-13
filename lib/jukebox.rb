@@ -55,3 +55,7 @@ end
 
 
 def run
+  return help
+
+  puts "Please enter your command:"
+  user_input = gets.chomp
