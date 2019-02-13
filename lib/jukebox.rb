@@ -54,11 +54,13 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-binding.pry
 
 
 def run
   help
+end
+  binding.pry
+
 while user_input != "exit"
   puts "Please enter your command:"
   user_input = gets.chomp
