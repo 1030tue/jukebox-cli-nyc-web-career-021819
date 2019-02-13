@@ -32,17 +32,20 @@ end
 
 
 def play(songs)
-  songs.each do |s|
-  if songs.include? (s)
-  "playing #{songs}!"
+  puts "Please endter a song name or number:"
+  user_input = gets.chomp
+
+  songs.each_with_index do |name,ind|
+    n = ind + 1
+  if user_input.to_i == n
+  "playing #{name}!"
+elsif user_input == name
+  "playing #{name}!"
 else
   "Invalid input, please try again"
 end
 end
 
-puts "Please enter a song name or number:"
-song_name = gets.chomp
-
-puts play(song_name)
+puts play(user_input)
 
 end
