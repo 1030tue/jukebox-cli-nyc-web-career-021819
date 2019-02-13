@@ -33,7 +33,7 @@ end
 
 def play(songs)
   songs.each do |s|
-  if s.include? (songs)
+  if songs.include? (s)
   "playing #{songs}!"
 else
   "Invalid input, please try again"
