@@ -46,6 +46,4 @@ else
 end
 end
 
-puts play(user_input)
-
 end
