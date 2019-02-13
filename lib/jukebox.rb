@@ -61,8 +61,10 @@ def run(songs)
   puts "Please enter your command:"
   user_input = gets.chomp
 
-  
+
 while user_input != "exit"
+  puts "Please enter your command:"
+  user_input = gets.chomp
 
 if user_input == "list"
 return list(songs)
