@@ -58,7 +58,7 @@ end
 
 def run(songs)
   help
-  binding.pry
+
 
 while user_input != "exit"
   puts "Please enter your command:"
@@ -80,3 +80,5 @@ end
 end
 exit_jukebox
 end
+
+binding.pry
