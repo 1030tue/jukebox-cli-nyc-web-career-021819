@@ -63,14 +63,17 @@ def run(songs)
 while user_input != "exit"
   if user_input == "list"
     list(songs)
+    puts "Please enter your command:"
     user_input = gets.chomp
 
 elsif user_input == "play"
   play(songs)
+  puts "Please enter your command:"
   user_input = gets.chomp
 
 elsif user_input == "help"
   help
+  puts "Please enter your command:"
   user_input = gets.chomp
 
 else
