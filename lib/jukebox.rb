@@ -81,5 +81,3 @@ end
 end
 exit_jukebox
 end
-
-binding.pry
