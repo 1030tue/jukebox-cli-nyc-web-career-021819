@@ -58,7 +58,6 @@ end
 
 def run(songs)
   help
-end
   binding.pry
 
 while user_input != "exit"
