@@ -38,11 +38,11 @@ def play(songs)
   songs.each_with_index do |name,ind|
     n = ind + 1
   if user_input.to_i == n
-  "playing #{name}!"
+  puts "playing #{name}!"
 elsif user_input == name
-  "playing #{name}!"
+  puts "playing #{name}!"
 else
-  "Invalid input, please try again"
+  puts "Invalid input, please try again"
 end
 end
 
