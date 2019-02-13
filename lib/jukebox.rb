@@ -65,15 +65,15 @@ def run(songs)
 while user_input != "exit"
 
 if user_input == "list"
-list(songs)
-puts "Please enter your command:"
-user_input = gets.chomp
+  list(songs)
+  puts "Please enter your command:"
+  user_input = gets.chomp
 
 elsif user_input == "play"
-return play(songs)
+  play(songs)
 
 elsif user_input == "help"
-return help
+  help
 
 else
   puts "Invalid input, please try again"
